@@ -1,0 +1,23 @@
+{
+  "name": "gergotakacs.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "browserslist": "^4.21.9",
+    "lightningcss": "^1.21.5",
+    "postcss": "^8.4.24",
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard": "^33.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-webc": "^0.11.1"
+  }
+}
