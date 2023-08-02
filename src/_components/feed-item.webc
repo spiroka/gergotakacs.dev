@@ -1,5 +1,4 @@
 <article>
   <h2 @text="title"></h2>
   <span @text="date"></span>
-  <p @text="content"></p>
 </article>

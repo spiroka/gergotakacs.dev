@@ -1,5 +1,6 @@
 const processCss = require('./scripts/processCss');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
+require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });

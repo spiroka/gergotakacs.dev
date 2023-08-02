@@ -12,6 +12,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "browserslist": "^4.21.9",
+    "dotenv": "^16.3.1",
     "lightningcss": "^1.21.5",
     "postcss": "^8.4.24",
     "stylelint": "^15.9.0",
