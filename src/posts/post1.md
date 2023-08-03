@@ -1,5 +1,5 @@
 ---
-tags: posts
+tags: post
 timestamp: '2023-08-01'
 ---
 Post1
