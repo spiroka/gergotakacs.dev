@@ -4,5 +4,5 @@ module.exports = async function () {
   );
   const { items } = await response.json();
 
-  return items;
+  return items || [];
 };

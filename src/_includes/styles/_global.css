@@ -1,0 +1,58 @@
+:root {
+  /*
+   * Typography
+   */
+  --line-height: 1.5;
+  --modular-scale: 1.2;
+  --font-size-base: 1rem;
+  --font-size-small: calc(var(--font-size-base) * 0.8);
+  --font-size-1: calc(var(--font-size-base) * var(--modular-scale));
+  --font-size-2: calc(var(--font-size-1) * var(--modular-scale));
+  --font-size-3: calc(var(--font-size-2) * var(--modular-scale));
+
+  /*
+   * Colors
+   */
+  --color-background: #fff7ee;
+  --color-background: oklab(98% 0.01 0.03);
+  --color-background-transparent: oklab(98% 0.01 0.03 / 0.3);
+}
+
+body {
+  font-family: sans-serif;
+  line-height: var(--line-height);
+  background:
+    radial-gradient(
+      circle at top left,
+      #9cdada 0%,
+      var(--color-background-transparent) 20%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      #eabdda 0%,
+      var(--color-background-transparent) 20%
+    ),
+    radial-gradient(
+      circle at top right,
+      #52ecaf 0%,
+      var(--color-background-transparent) 20%
+    );
+}
+
+h1 {
+  font-size: var(--font-size-3);
+}
+
+h2 {
+  font-size: var(--font-size-2);
+}
+
+h3 {
+  font-size: var(--font-size-1);
+}
+
+p,
+li,
+blockquote {
+  max-width: 65ch;
+}

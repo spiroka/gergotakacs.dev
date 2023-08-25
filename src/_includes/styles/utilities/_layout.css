@@ -1,0 +1,8 @@
+.flow > * + * {
+  margin-block-start: var(--flow-space, calc(var(--line-height) * 1em));
+}
+
+.wrapper {
+  max-width: 56rem;
+  margin-inline: auto;
+}
