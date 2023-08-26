@@ -3,7 +3,7 @@
   layout: layouts/base.webc
 ---
 <main class="flow">
-  <section class="wrapper">
+  <section class="intro wrapper text-xl margin-y-l">
     <p>
       Hi! It's nice to have you here! My name is Gergő and this is my personal website.
       Take a look around, but please don't touch anything!

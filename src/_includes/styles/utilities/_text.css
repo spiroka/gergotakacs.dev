@@ -1,0 +1,19 @@
+.text-s {
+  font-size: var(--font-size-small);
+}
+
+.text-m {
+  font-size: var(--font-size-base);
+}
+
+.text-l {
+  font-size: var(--font-size-1);
+}
+
+.text-xl {
+  font-size: var(--font-size-2);
+}
+
+.text-xxl {
+  font-size: var(--font-size-3);
+}
