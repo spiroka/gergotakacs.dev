@@ -19,6 +19,7 @@
     "stylelint-config-standard": "^33.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.1"
   }
 }
