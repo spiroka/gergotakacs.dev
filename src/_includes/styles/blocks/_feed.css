@@ -1,0 +1,13 @@
+.feed {
+  & h2 {
+    color: var(--color-primary);
+    font-size: calc(var(--font-size-3) * 1.5);
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+.feed-item {
+  max-width: 30rem;
+  margin-inline: auto;
+}

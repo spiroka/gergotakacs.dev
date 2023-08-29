@@ -2,14 +2,18 @@
   title: Gergő Takács
   layout: layouts/base.webc
 ---
-<main class="flow">
-  <section class="intro wrapper text-xl margin-y-l">
+<header>
+  <section class="intro wrapper flow text-xxl margin-y-l">
+    <h1>Hi, I'm Gergő.</h1>
     <p>
-      Hi! It's nice to have you here! My name is Gergő and this is my personal website.
-      Take a look around, but please don't touch anything!
+      Welcome to my personal website!<br>
+      Take a look around, but please don't break anything!
     </p>
   </section>
-  <section class="flow wrapper">
+</header>
+<main class="flow">
+  <section class="feed flow wrapper">
+    <h2>The Feed</h2>
     <feed-item webc:for="item of collections.feed" :@date="item.timestamp" :@title="item.title"  />
   </section>
 </main>

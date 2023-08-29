@@ -1,4 +1,6 @@
-<article>
-  <h2 @text="title"></h2>
+<article class="feed-item">
+  <a href=''>
+    <h3 @text="title"></h3>
+  </a>
   <span @text="date"></span>
 </article>

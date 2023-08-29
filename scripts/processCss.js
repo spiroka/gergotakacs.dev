@@ -8,6 +8,9 @@ module.exports = function(content) {
     filename: 'src/_includes/styles/style.css',
     code: content,
     minify: true,
+    drafts: {
+      nesting: true
+    },
     targets
   }).code.toString();
 };
