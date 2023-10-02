@@ -4,7 +4,7 @@
    */
   --line-height: 1.5;
   --modular-scale: 1.2;
-  --font-size-base: 1rem;
+  --font-size-base: 1.2rem;
   --font-size-small: calc(var(--font-size-base) * 0.8);
   --font-size-1: calc(var(--font-size-base) * var(--modular-scale));
   --font-size-2: calc(var(--font-size-1) * var(--modular-scale));
@@ -16,6 +16,7 @@
   --color-primary: oklch(50% 0.3 275);
   --color-background-light: oklch(98% 0.03 105);
   --color-background-light-transparent: oklch(98% 0.03 105 / 40%);
+  --color-muted: grey;
 
   /*
    * Images
@@ -47,11 +48,12 @@
 html {
   height: 100%;
   background: var(--color-primary);
+  font-size: 18px;
 }
 
 body {
   height: 100%;
-  font-family: 'Mona Sans';
+  font-family: 'Mona Sans', sans-serif;
   line-height: var(--line-height);
 }
 
@@ -60,7 +62,6 @@ main {
   padding-block-start: 5em;
   padding-inline: 5em;
   margin-inline: auto;
-  max-width: 60rem;
   min-height: 100%;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
@@ -87,7 +88,6 @@ main {
     );
   background-size: 150% 150%;
   animation: background-animation 25s infinite;
-  box-shadow: 0px 0px 10px rgba(0 0 0 / 0.2) inset;
 }
 
 main::before,
@@ -115,6 +115,7 @@ main::after {
   border-image-source: var(--border-image);
   border-image-slice: 35 0 0 0;
   border-image-repeat: round;
+  pointer-events: none;
 }
 
 @keyframes background-animation {

@@ -1,6 +1,7 @@
-<article class="feed-item">
+<article class="feed-item flow margin-y-m padding-m">
+  <span class="text-s text-muted" @text="date"></span>
+  <img webc:if="image" :src="image" alt="">
   <a href=''>
     <h3 @text="title"></h3>
   </a>
-  <span @text="date"></span>
 </article>

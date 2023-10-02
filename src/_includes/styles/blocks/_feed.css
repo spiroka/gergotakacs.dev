@@ -1,13 +1,36 @@
 .feed {
+  --flow-space: 0.5em;
+
   & h2 {
     color: var(--color-primary);
     font-size: calc(var(--font-size-3) * 1.5);
     font-weight: 900;
-    text-align: center;
   }
 }
 
 .feed-item {
-  max-width: 30rem;
-  margin-inline: auto;
+  max-width: 35rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: var(--color-primary) 5px 5px;
+  color: var(--color-primary);
+  transition: all 0.2s;
+  transform: translateY(-2px);
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(0px);
+  }
+
+  & a {
+    display: block;
+    color: currentcolor;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--color-primary);
+      text-decoration-thickness: 3px;
+    }
+  }
 }

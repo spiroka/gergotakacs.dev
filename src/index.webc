@@ -14,6 +14,7 @@
 <main class="flow">
   <section class="feed flow wrapper">
     <h2>The Feed</h2>
-    <feed-item webc:for="item of collections.feed" :@date="item.timestamp" :@title="item.title"  />
+    <p>Some content I've created and stuff I think about...</p>
+    <feed-item webc:for="item of collections.feed" :@date="item.timestamp" :@title="item.title" :@image="item.image" />
   </section>
 </main>
