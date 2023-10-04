@@ -11,17 +11,27 @@
     </p>
   </section>
 </header>
-<main class="flow">
-  <section class="feed flow wrapper">
-    <h2>The Feed</h2>
-    <p>Some content I've created and stuff I think about...</p>
-    <feed-item
-      webc:for="item of collections.feed"
-      :@date="item.timestamp"
-      :@title="item.title"
-      :@image="item.image"
-      :@is-external="item.isExternal"
-      :@link="item.url"
-    />
-  </section>
+<main>
+  <div class="main-content wrapper">
+    <section class="feed flow">
+      <h2>The Feed</h2>
+      <p>Some content I've created and stuff I think about...</p>
+      <feed-item
+        webc:for="item of collections.feed"
+        :@date="item.timestamp"
+        :@title="item.title"
+        :@image="item.image"
+        :@is-external="item.isExternal"
+        :@link="item.url"
+      />
+    </section>
+    <section class="about flow margin-x-s padding-s">
+      <p>
+        Senior Developer at <a href="https://www.epam.com">EPAM</a>
+      </p>
+      <p>
+        From Hungary 🇭🇺, currently living in Málaga, Spain 🇪🇸
+      </p>
+    </section>
+  </div>
 </main>

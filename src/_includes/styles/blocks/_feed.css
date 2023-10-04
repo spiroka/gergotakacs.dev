@@ -11,7 +11,7 @@
 
 .feed-item {
   max-width: 35rem;
-  background-color: white;
+  background-color: var(--color-secondary);
   border-radius: var(--border-radius);
   box-shadow: var(--color-primary) 5px 5px;
   color: var(--color-primary);
@@ -35,12 +35,5 @@
 
   & a {
     color: currentcolor;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--color-primary);
-      text-decoration-thickness: 3px;
-    }
   }
 }

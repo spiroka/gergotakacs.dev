@@ -1,0 +1,7 @@
+.about {
+  position: sticky;
+  top: 1rem;
+  background-color: var(--color-secondary);
+  flex: 1;
+  border-radius: 1rem;
+}
