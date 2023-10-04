@@ -149,3 +149,7 @@ li,
 blockquote {
   max-width: 65ch;
 }
+
+a[data-variant='external']::after {
+  content: '↗';
+}

@@ -18,7 +18,8 @@ module.exports = function (eleventyConfig) {
       title: snippet.title,
       url: `https://youtube.com/watch?v=${id.videoId}`,
       image: snippet.thumbnails.medium.url,
-      timestamp: snippet.publishedAt.split('T')[0]
+      timestamp: snippet.publishedAt.split('T')[0],
+      isExternal: true
     }));
 
     return [...postFeed, ...videoFeed];

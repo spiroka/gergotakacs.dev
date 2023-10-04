@@ -15,6 +15,13 @@
   <section class="feed flow wrapper">
     <h2>The Feed</h2>
     <p>Some content I've created and stuff I think about...</p>
-    <feed-item webc:for="item of collections.feed" :@date="item.timestamp" :@title="item.title" :@image="item.image" />
+    <feed-item
+      webc:for="item of collections.feed"
+      :@date="item.timestamp"
+      :@title="item.title"
+      :@image="item.image"
+      :@is-external="item.isExternal"
+      :@link="item.url"
+    />
   </section>
 </main>

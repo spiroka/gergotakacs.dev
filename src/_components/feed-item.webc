@@ -1,7 +1,7 @@
 <article class="feed-item flow margin-y-m padding-m">
-  <span class="text-s text-muted" @text="date"></span>
   <img webc:if="image" :src="image" alt="">
-  <a href=''>
-    <h3 @text="title"></h3>
-  </a>
+  <span class="text-s text-muted" @text="date"></span>
+  <h3>
+    <a :href='link' @text="title" :data-variant="isExternal ? 'external' : ''"></a>
+  </h3>
 </article>
