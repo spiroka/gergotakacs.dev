@@ -4,4 +4,14 @@
   background-color: var(--color-secondary);
   flex: 1;
   border-radius: 1rem;
+
+  & img {
+    display: block;
+    width: 10rem;
+    border-radius: 50%;
+  }
+
+  & p:first-of-type {
+    margin-block-start: 0;
+  }
 }
