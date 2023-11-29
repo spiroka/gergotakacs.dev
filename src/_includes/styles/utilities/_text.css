@@ -25,3 +25,7 @@
 .text-muted {
   color: var(--color-muted);
 }
+
+.font-thin {
+  font-weight: 300;
+}

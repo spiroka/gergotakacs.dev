@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  max-width: 56rem;
+  max-width: 60rem;
   margin-inline: auto;
 }
 
@@ -69,4 +69,52 @@
 .padding-y-l,
 .padding-l {
   padding-block: var(--space-l);
+}
+
+.margin-bottom-s {
+  margin-block-end: var(--space-s);
+}
+
+.margin-bottom-m {
+  margin-block-end: var(--space-m);
+}
+
+.margin-bottom-l {
+  margin-block-end: var(--space-l);
+}
+
+.margin-top-s {
+  margin-block-start: var(--space-s);
+}
+
+.margin-top-m {
+  margin-block-start: var(--space-m);
+}
+
+.margin-top-l {
+  margin-block-start: var(--space-l);
+}
+
+.margin-left-s {
+  margin-inline-start: var(--space-s);
+}
+
+.margin-left-m {
+  margin-inline-start: var(--space-m);
+}
+
+.margin-left-l {
+  margin-inline-start: var(--space-l);
+}
+
+.margin-right-s {
+  margin-inline-end: var(--space-s);
+}
+
+.margin-right-m {
+  margin-inline-end: var(--space-m);
+}
+
+.margin-right-l {
+  margin-inline-end: var(--space-l);
 }

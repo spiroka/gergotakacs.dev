@@ -3,12 +3,16 @@
   layout: layouts/base.webc
 ---
 <header>
-  <section class="intro wrapper flow text-xxl margin-y-l">
-    <h1>Hi, I'm Gergő.</h1>
-    <p>
-      Welcome to my personal website!<br>
-      Take a look around, but please don't break anything!
-    </p>
+  <section class="intro wrapper text-l margin-bottom-l margin-top-s">
+    <div class="intro__background"></div>
+    <div class="intro__text flow">
+      <h1>Hi, I'm Gergő 👋</h1>
+      <p class="font-thin">
+        Welcome to my personal website!<br>
+        Take a look around, but please don't break anything!
+      </p>
+    </div>
+    <img class="intro__image" src="images/me.png" alt="">
   </section>
 </header>
 <main>
@@ -25,8 +29,8 @@
         :@link="item.url"
       />
     </section>
-    <section class="about flow margin-x-s padding-s">
-      <img class="margin-x-auto" src="images/me.jpg" alt="">
+    <section class="about flow margin-left-s padding-s">
+      <img class="margin-x-auto" src="images/me.png" alt="">
       <p class="text-l">
         Hi,
       </p>

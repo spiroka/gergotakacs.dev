@@ -18,6 +18,7 @@
   --color-neutral: oklch(98% 0.03 105);
   --color-neutral-transparent: oklch(98% 0.03 105 / 40%);
   --color-muted: grey;
+  --color-text: #2b3a4c;
 
   /*
    * Images
@@ -49,30 +50,37 @@
   src:
     url('/fonts/MonaSans.woff2') format('woff2 supports variations'),
     url('/fonts/MonaSans.woff2') format('woff2-variations');
-  font-weight: 500 900;
+  font-weight: 200 900;
   font-stretch: 100%;
 }
 
 html {
-  height: 100%;
-  background: var(--color-primary);
-  font-size: 18px;
-}
-
-body {
-  height: 100%;
-  font-family: 'Mona Sans', sans-serif;
-  line-height: var(--line-height);
-}
-
-main {
   position: relative;
-  padding-block-start: 5em;
-  padding-inline: 5em;
-  margin-inline: auto;
-  min-height: 100%;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
+  font-size: 18px;
+  margin: 2rem;
+  background-color: whitesmoke;
+  color: var(--color-text);
+}
+
+html::before,
+html::after {
+  content: '';
+  height: 100%;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 2em;
+}
+
+html::before {
+  background-image: url('/images/noise.svg');
+  mix-blend-mode: saturation;
+}
+
+html::after {
   background:
     radial-gradient(
       circle at top left,
@@ -98,32 +106,10 @@ main {
   animation: background-animation 25s infinite;
 }
 
-main::before,
-main::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-main::before {
+body {
   height: 100%;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  z-index: -1;
-  background-image: url('/images/noise.svg');
-  mix-blend-mode: difference;
-}
-
-main::after {
-  height: 200px;
-  border-top: 70px solid;
-  border-image-source: var(--border-image);
-  border-image-slice: 35 0 0 0;
-  border-image-repeat: round;
-  pointer-events: none;
+  font-family: 'Mona Sans', sans-serif;
+  line-height: var(--line-height);
 }
 
 @keyframes background-animation {
