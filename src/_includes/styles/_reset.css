@@ -27,6 +27,14 @@ time, mark, audio, video {
     background:transparent;
 }
 
+:is(ol, ul) :is(ol, ul) {
+  padding: revert;
+}
+
+summary {
+  cursor: pointer;
+}
+
 body {
     line-height:1;
 }

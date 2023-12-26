@@ -26,6 +26,14 @@
   color: var(--color-muted);
 }
 
+.text-primary {
+  color: var(--color-primary);
+}
+
 .font-thin {
-  font-weight: 300;
+  font-weight: var(--font-weight-thin);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
 }

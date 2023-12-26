@@ -1,0 +1,10 @@
+<nav class="nav margin-y-m">
+  <ul class="text-m font-bold">
+    <li class="margin-right-m">
+      <a href="/">home</a>
+    </li>
+    <li>
+      <a href="/archives">archives</a>
+    </li>
+  </ul>
+</nav>

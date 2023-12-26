@@ -9,7 +9,8 @@ module.exports = function(content) {
     code: content,
     minify: true,
     drafts: {
-      nesting: true
+      nesting: true,
+      customMedia: true
     },
     targets
   }).code.toString();

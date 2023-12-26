@@ -1,4 +1,16 @@
 .main-content {
   display: flex;
   align-items: flex-start;
+  gap: var(--space-s);
+
+  @media (--width-small) {
+    & {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
+  }
+
+  & > * {
+    flex: 1;
+  }
 }

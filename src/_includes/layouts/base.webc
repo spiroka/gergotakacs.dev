@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" :content="eleventy.generator">
     <title @raw="title"></title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
 		<script :src="getBundleFileUrl('js')"></script>
 	</head>
-	<body @raw="content"></body>
+	<body>
+    <script webc:type="js">
+      this.content
+    </script>
+    <site-footer></site-footer>
+  </body>
 </html>

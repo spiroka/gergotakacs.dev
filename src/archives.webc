@@ -1,0 +1,24 @@
+---
+  title: Archives
+  layout: layouts/base.webc
+---
+
+<header class="margin-x-l">
+  <site-nav></site-nav>
+</header>
+<main class="feed feed-archive flow wrapper">
+  <h1 class="font-thin margin-y-l">
+    <span class="text-primary">›</span>
+    archives
+  </h1>
+  <feed-item
+    webc:for="(item, index) of collections.feed"
+    webc:if="index < 5"
+    :@date="item.timestamp"
+    :@title="item.title"
+    :@image="item.image"
+    :@is-external="item.isExternal"
+    :@link="item.url"
+    :@tags="item.tags"
+  ></feed-item>
+</main>

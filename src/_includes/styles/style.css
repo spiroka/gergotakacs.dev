@@ -1,4 +1,5 @@
 @import "_reset.css";
 @import "_global.css";
+@import "_prismjs-theme.css";
 @import "utilities/index.css";
 @import "blocks/index.css";
