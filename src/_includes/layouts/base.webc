@@ -10,6 +10,7 @@
 		<script :src="getBundleFileUrl('js')"></script>
 	</head>
 	<body>
+    <div class="site-background"></div>
     <script webc:type="js">
       this.content
     </script>

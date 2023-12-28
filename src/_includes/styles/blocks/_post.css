@@ -4,6 +4,11 @@
   line-height: 2;
   background-color: var(--color-secondary);
   border-radius: 2em;
+  padding: var(--space-l);
+
+  @media (--width-small) {
+    padding: var(--space-l) var(--space-s);
+  }
 
   & h1 {
     font-size: 3em;

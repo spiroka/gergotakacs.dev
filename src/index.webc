@@ -4,6 +4,8 @@
 ---
 <header class="margin-x-l">
   <site-nav></site-nav>
+</header>
+<main class="margin-x-s">
   <section class="intro wrapper text-l margin-bottom-l padding-top-s">
     <div class="intro__background"></div>
     <div class="intro__text flow">
@@ -15,8 +17,6 @@
     </div>
     <img class="intro__image" src="images/me.png" alt="">
   </section>
-</header>
-<main class="margin-x-l">
   <div class="main-content wrapper">
     <section class="feed flow margin-bottom-m">
       <h2 class="font-thin">
