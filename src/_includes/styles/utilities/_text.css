@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.text-xs {
+  font-size: var(--font-size-tiny);
+}
+
 .text-s {
   font-size: var(--font-size-small);
 }

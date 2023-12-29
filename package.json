@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "new:post": "zx ./scripts/newPost.mjs"
   },
   "author": "",
   "license": "ISC",
@@ -17,13 +18,15 @@
     "lightningcss": "^1.21.5",
     "postcss": "^8.4.24",
     "stylelint": "^15.9.0",
-    "stylelint-config-standard": "^33.0.0"
+    "stylelint-config-standard": "^33.0.0",
+    "zx": "^7.2.3"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.1",
     "eleventy-plugin-toc": "^1.1.5",
     "markdown-it": "^14.0.0",
-    "markdown-it-anchor": "^8.6.7"
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-footnote": "^4.0.0"
   }
 }

@@ -1,0 +1,76 @@
+.site-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.site-background::before,
+.site-background::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.site-background::before {
+  background-image: url('/images/noise.svg');
+  mix-blend-mode: saturation;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.site-background::after {
+  top: -50%;
+  left: -50%;
+  background:
+    radial-gradient(
+      circle at top left,
+      #9cdada 0%,
+      var(--color-neutral-transparent) 30%
+    ),
+    radial-gradient(
+      circle at right,
+      #e932d9 0%,
+      var(--color-neutral-transparent) 20%
+    ),
+    radial-gradient(
+      circle at center,
+      #2fb8fb 0%,
+      var(--color-neutral-transparent) 40%
+    ),
+    radial-gradient(
+      circle at top right,
+      #52ecaf 0%,
+      var(--color-neutral-transparent) 20%
+    );
+  animation: background-animation 25s infinite;
+  height: 150%;
+  width: 150%;
+  z-index: -2;
+}
+
+body {
+  height: 100%;
+  font-family: 'Mona Sans', sans-serif;
+  line-height: var(--line-height);
+}
+
+@keyframes background-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10%, 10%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

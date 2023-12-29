@@ -11,7 +11,7 @@
   }
 
   & h1 {
-    font-size: 3em;
+    font-size: var(--font-size-enormous);
     line-height: 1.2;
   }
 }

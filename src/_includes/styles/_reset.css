@@ -10,7 +10,7 @@ html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
+small, strong, var,
 b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -25,6 +25,16 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub { 
+  top: 0.4em; 
 }
 
 :is(ol, ul) :is(ol, ul) {
