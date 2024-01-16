@@ -1,15 +1,17 @@
 #!/usr/bin/env zx
 
 import 'zx/globals';
+import slugify from '@sindresorhus/slugify';
 
 const todayStr = new Date().toISOString();
 const title = await question('Title: ');
+const slug = slugify(title);
 let contents = (await fs.readFile(path.resolve(__dirname, '../templates/post.md'))).toString();
 
 contents = contents
-  .replace('${date}', todayStr.split('T')[0])
-  .replace('${title}', title);
+  .replace('${date}', todayStr)
+  .replace('${title}', title)
+  .replace('${slug}', slug);
 
-
-await fs.mkdir(path.resolve(__dirname, `../src/posts/${todayStr}`));
-await fs.writeFile(path.resolve(__dirname, `../src/posts/${todayStr}/index.md`), contents);
+await fs.mkdir(path.resolve(__dirname, `../src/posts/${slug}`));
+await fs.writeFile(path.resolve(__dirname, `../src/posts/${slug}/index.md`), contents);

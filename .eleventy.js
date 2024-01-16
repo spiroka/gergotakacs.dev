@@ -11,6 +11,7 @@ require('dotenv').config();
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
   eleventyConfig.addPassthroughCopy({ 'src/_includes/javascript': '/' });
+  eleventyConfig.setTemplateFormats(['md', 'jpeg', 'jpg']);
   eleventyConfig.addCollection('feed', async function (collectionApi) {
     const posts = collectionApi.getFilteredByTag('blog');
     const videos = await fetchVideos();

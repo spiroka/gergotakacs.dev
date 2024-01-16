@@ -13,6 +13,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@sindresorhus/slugify": "^2.2.1",
     "browserslist": "^4.21.9",
     "dotenv": "^16.3.1",
     "lightningcss": "^1.21.5",
