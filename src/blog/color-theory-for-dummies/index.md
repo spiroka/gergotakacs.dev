@@ -2,7 +2,7 @@
 permalink: /blog/color-theory-for-dummies/
 tags:
   - blog
-timestamp: 2023-12-28
+timestamp: 2024-01-19
 title: Color theory essentials for CSS
 layout: layouts/post.webc
 ---
