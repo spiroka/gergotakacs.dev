@@ -1,7 +1,7 @@
 .post {
   margin-inline: auto;
   max-width: 80ch;
-  line-height: 2;
+  line-height: 1.8;
   background-color: var(--color-secondary);
   border-radius: 2em;
   padding: var(--space-l);
@@ -13,5 +13,19 @@
   & h1 {
     font-size: var(--font-size-enormous);
     line-height: 1.2;
+  }
+
+  & img {
+    display: block;
+    width: 40%;
+    margin-inline: auto;
+  }
+
+  & :is(h2, h3, h4, h5) {
+    --flow-space: 3rem;
+
+    & + * {
+      --flow-space: 0.5rem;
+    }
   }
 }
