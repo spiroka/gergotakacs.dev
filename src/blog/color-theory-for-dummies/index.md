@@ -1,9 +1,9 @@
 ---
-permalink: /blog/{{ title | slug }}/
+permalink: /blog/color-theory-for-dummies/
 tags:
   - blog
 timestamp: 2023-12-28
-title: Color theory for dummies
+title: Color theory essentials for CSS
 layout: layouts/post.webc
 ---
 I was having a rough time recently trying to understand how the [new CSS color functions](https://developer.mozilla.org/en-US/blog/css-color-module-level-4/) work and why they are better than what we had before. I've been using colors in CSS for a decade, but besides knowing what the three letters in RGB stood for, I knew nothing about color theory.
