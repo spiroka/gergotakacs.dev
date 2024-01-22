@@ -21,7 +21,7 @@ The CSS Color Level 4 spec introduced several [new color spaces](https://develop
 
 A color model is a **mathematical model for expressing colors**. Think of them as functions, that take some parameters and return a color. For example in CSS the `rgb()` and `hsl()` color functions are based on models with the same names. 
 
-Although technically incorrect, it is common to refer to models as color spaces^[[https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide](https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide)], which confused the hell out of me initially. The reason for this is that in practice, models are accompanied with a mapping function which maps the values of the model to a color in a color space. This means that a particular combination of model and mapping function will identify a color space.
+Although technically incorrect, it is common to refer to models as color spaces^[[https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide](https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide)], which confused the hell out of me initially. The reason for this is that in practice, models are accompanied by a mapping function which maps the values of the model to a color in a color space. This means that a particular combination of model and mapping function will identify a color space.
 
 ![A meme making fun of how I would correct someone when they use the term "color space" incorrectly.](actually.jpeg)
 
@@ -33,7 +33,7 @@ The Color Level 4 spec introduced a bunch of [new color functions](https://devel
 
 A gamut – just like a color space – is a **range of colors**. The difference is that gamut refers to the colors that **a device** (eg. a monitor or printer) **can display or reproduce within a color space**.
 
-With the new color spaces in CSS we can take advantage of wide gamut displays. While browsers are smart enough to approximate high definition colors on non-HD devices, providing a fallback ourselves can yield better results. Just like with other device characteristics, we will use a media query to check if the user's display supports a specific gamut.
+With the new color spaces in CSS we can take advantage of wide gamut displays. While browsers are smart enough to approximate high definition colors on devices that don't support them, providing a fallback ourselves can yield better results. Just like with other device characteristics, we will use a media query to check if the user's display supports a specific gamut.
 
 ```css
 p {
