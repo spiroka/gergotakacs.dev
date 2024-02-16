@@ -1,9 +1,16 @@
 .nav {
+  position: relative;
+  z-index: 100;
+
   & ul {
     list-style: none;
+    display: flex;
+    gap: var(--space-m);
 
     & li {
-      display: inline-block;
+      & a {
+        text-decoration: none;
+      }
     }
   }
 }

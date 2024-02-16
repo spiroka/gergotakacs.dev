@@ -89,14 +89,9 @@ body {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary);
-    text-decoration-thickness: max(0.08em, 1px);
-    text-underline-offset: 0.2em;
-  }
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.05em;
 
   &[data-variant='external']::after {
     content: '↗';
