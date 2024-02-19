@@ -1,19 +1,16 @@
 .about {
   position: sticky;
   top: var(--space-s);
-  background-color: var(--color-secondary);
   flex: 1;
   border-radius: 1rem;
 
   & .social-links {
     display: flex;
     justify-content: space-around;
-  }
 
-  & img {
-    display: block;
-    width: 10rem;
-    border-radius: 50%;
+    & a {
+      color: var(--text-color);
+    }
   }
 
   @media (--width-small) {

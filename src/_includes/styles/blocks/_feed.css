@@ -1,14 +1,5 @@
 .feed-item {
   width: 100%;
-  background-color: var(--color-secondary);
-  border-radius: var(--border-radius);
-  transition: all 0.2s;
-  transform: translateY(2px);
-
-  &:hover {
-    box-shadow: none;
-    transform: translateY(0);
-  }
 
   & .date {
     display: block;
@@ -16,40 +7,31 @@
 
   & img {
     display: block;
-    border-radius: var(--border-radius);
+    border-radius: 1rem;
     width: 100%;
   }
 
   & a {
-    color: var(--color-primary);
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   & .feed-item__tag {
     display: inline-block;
-    padding: 0.15em 0.3em;
-    border-radius: 0.5em;
-    color: var(--feed-item-tag-color, var(--color-secondary));
-    background-color: var(--feed-item-tag-bg, var(--color-primary));
+    color: var(--feed-item-tag-color, var(--color-primary));
 
     &.feed-item__tag--video {
-      --feed-item-tag-bg: var(--color-youtube-red);
+      --feed-item-tag-color: var(--color-youtube-red);
     }
-  }
-}
-
-.feed-item-placeholder {
-  height: 8rem;
-  border-radius: var(--border-radius);
-  background-image: linear-gradient(0deg, transparent, var(--color-secondary));
-
-  & .button {
-    display: inline-block;
   }
 }
 
 .feed {
   --flow-space: 0.5em;
-  --border-radius: 1rem;
 
   &.feed-archive {
     max-width: 60ch;
@@ -57,25 +39,5 @@
 
   & h1, & h2 {
     font-size: calc(var(--font-size-3) * 1.5);
-
-    & span {
-      position: relative;
-      bottom: 0.06em;
-      animation: blink 1s infinite;
-    }
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
   }
 }

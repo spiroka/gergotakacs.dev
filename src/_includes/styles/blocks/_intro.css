@@ -38,22 +38,32 @@
     grid-column: 1 / span 2;
     height: 100%;
     border-radius: 2rem;
-    background-image: radial-gradient(
-      farthest-corner at 0 6rem, var(--color-secondary) 60%, rgb(0 0 0 / 20%) 100%
-    );
-
-    @media (--width-small) {
-      & {
-        background-image: none;
-        background-color: var(--color-secondary);
-      }
-    }
+    background:
+      radial-gradient(
+        circle at top left,
+        #9cdada 0%,
+        var(--color-neutral-transparent) 30%
+      ),
+      radial-gradient(
+        circle at right,
+        #e932d9 0%,
+        var(--color-neutral-transparent) 20%
+      ),
+      radial-gradient(
+        circle at center,
+        #2fb8fb 0%,
+        var(--color-neutral-transparent) 40%
+      ),
+      radial-gradient(
+        circle at top right,
+        #52ecaf 0%,
+        var(--color-neutral-transparent) 20%
+      );
   }
 
   & h1 {
     font-weight: 900;
     font-size: var(--font-size-enormous);
-    color: var(--color-primary);
   }
 
   & img {

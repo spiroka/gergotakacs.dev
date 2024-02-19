@@ -6,13 +6,7 @@
   height: 100%;
   z-index: -1;
   overflow: hidden;
-}
-
-.site-background::before,
-.site-background::after {
-  content: '';
-  display: block;
-  position: absolute;
+  background-color: var(--color-neutral);
 }
 
 .site-background::before {
@@ -28,27 +22,6 @@
 .site-background::after {
   top: -50%;
   left: -50%;
-  background:
-    radial-gradient(
-      circle at top left,
-      #9cdada 0%,
-      var(--color-neutral-transparent) 30%
-    ),
-    radial-gradient(
-      circle at right,
-      #e932d9 0%,
-      var(--color-neutral-transparent) 20%
-    ),
-    radial-gradient(
-      circle at center,
-      #2fb8fb 0%,
-      var(--color-neutral-transparent) 40%
-    ),
-    radial-gradient(
-      circle at top right,
-      #52ecaf 0%,
-      var(--color-neutral-transparent) 20%
-    );
   animation: background-animation 25s infinite;
   height: 150%;
   width: 150%;

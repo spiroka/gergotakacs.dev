@@ -2,13 +2,6 @@
   margin-inline: auto;
   max-width: 80ch;
   line-height: 1.8;
-  background-color: var(--color-secondary);
-  border-radius: 2em;
-  padding: var(--space-l);
-
-  @media (--width-small) {
-    padding: var(--space-l) var(--space-s);
-  }
 
   & h1 {
     font-size: var(--font-size-enormous);
