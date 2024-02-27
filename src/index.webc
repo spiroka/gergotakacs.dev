@@ -37,7 +37,7 @@
         </a>
       </div>
     </section>
-    <section class="about flow padding-m">
+    <section class="about flow">
       <h3>about me</h3>
       <p>
         I'm a <strong>senior software engineer</strong> at <a href="https://epam.com">EPAM Systems</a>.

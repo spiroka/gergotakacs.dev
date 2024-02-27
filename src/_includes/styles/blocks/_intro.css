@@ -41,29 +41,29 @@
     background:
       radial-gradient(
         circle at top left,
-        #9cdada 0%,
-        var(--color-neutral-transparent) 30%
+        var(--color-gradient-1) 0%,
+        var(--color-background-transparent) 30%
       ),
       radial-gradient(
         circle at right,
-        #e932d9 0%,
-        var(--color-neutral-transparent) 20%
+        var(--color-gradient-2) 0%,
+        var(--color-background-transparent) 20%
       ),
       radial-gradient(
         circle at center,
-        #2fb8fb 0%,
-        var(--color-neutral-transparent) 40%
+        var(--color-gradient-3) 0%,
+        var(--color-background-transparent) 40%
       ),
       radial-gradient(
         circle at top right,
-        #52ecaf 0%,
-        var(--color-neutral-transparent) 20%
+        var(--color-gradient-4) 0%,
+        var(--color-background-transparent) 20%
       );
   }
 
   & h1 {
     font-weight: 900;
-    font-size: var(--font-size-enormous);
+    font-size: clamp(var(--font-size-3), 4vw, var(--font-size-enormous));
   }
 
   & img {

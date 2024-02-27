@@ -1,3 +1,25 @@
-<footer class="text-center text-s font-thin margin-l">
-  © 2023 Gergő Takács • <a href="https://github.com/spiroka/gergotakacs.dev">View source</a> • Built with <a href="https://11ty.dev">11ty</a>
+<footer class="margin-x-s">
+  <div class="footer wrapper flow padding-l">
+    <div class="footer__start flow">
+      <div class="flow text-center margin-x-auto">
+        <p>
+          My name is Gergő Takács, I'm a web developer from Hungary, currently living on the sunny Costa del Sol of Spain.
+        </p>
+        <p>
+          You can find me on: <a href="https://github.com/spiroka">Github</a>, <a href="https://www.linkedin.com/in/gergot/">LinkedIn</a>, <a href="https://www.youtube.com/@_wwwespont">YouTube</a>.
+        </p>
+      </div>
+      <ul class="text-s font-bold margin-y-l">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/archives">Archives</a>
+        </li>
+      </ul>
+    </div>
+    <div class="text-center text-s font-thin">
+      © 2023 Gergő Takács • <a href="https://github.com/spiroka/gergotakacs.dev">View source</a> • Built with <a href="https://11ty.dev">11ty</a>
+    </div>
+  </div>
 </footer>

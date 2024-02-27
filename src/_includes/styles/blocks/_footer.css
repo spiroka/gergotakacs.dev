@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--color-text);
+  border-radius: 2rem;
+  margin-block-start: calc(3 * var(--space-l));
+  margin-block-end: var(--space-l);
+  color: var(--color-secondary);
+
+  & a {
+    color: var(--color-secondary);
+    text-decoration-color: var(--color-secondary);
+  }
+
+  & .footer__start {
+    > :is(:first-child) {
+      max-width: 50ch;
+    }
+
+    & ul {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-m);
+      list-style: none;
+    }
+  }
+}

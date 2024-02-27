@@ -19,8 +19,12 @@
    */
   --color-primary: #022292;
   --color-secondary: white;
-  --color-neutral: oklch(98% 0.03 105);
-  --color-neutral-transparent: oklch(98% 0.03 105 / 40%);
+  --color-background: oklch(98% 0.03 105);
+  --color-background-transparent: oklch(98% 0.03 105 / 40%);
+  --color-gradient-1: #9cdada;
+  --color-gradient-2: #e932d9;
+  --color-gradient-3: #2fb8fb;
+  --color-gradient-4: #52ecaf;
   --color-muted: grey;
   --color-text: #2b3a4c;
   --color-youtube-red: red;
@@ -43,8 +47,8 @@
  */
 @supports not (background-color: oklch(0% 0 0)) {
   :root {
-    --color-neutral: rgb(251 250 227);
-    --color-neutral-transparent: rgb(251 250 227 / 40%);
+    --color-background: rgb(251 250 227);
+    --color-background-transparent: rgb(251 250 227 / 40%);
   }
 }
 
@@ -59,16 +63,9 @@
 
 html {
   position: relative;
-  font-size: 16px;
-  background-color: whitesmoke;
+  font-size: 100%;
   color: var(--color-text);
   min-height: 100vh;
-
-  @media (--width-small) {
-    & {
-      margin: 0
-    }
-  }
 }
 
 h1 {
@@ -91,10 +88,11 @@ a {
   color: var(--color-primary);
   text-decoration-color: var(--color-primary);
   text-decoration-thickness: max(0.08em, 1px);
-  text-underline-offset: 0.05em;
+  text-underline-offset: 0.1em;
 
   &[data-variant='external']::after {
     content: '↗';
+    font-size: 0.6em;
   }
 }
 
