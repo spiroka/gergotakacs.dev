@@ -7,12 +7,20 @@
     <title @raw="title"></title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
-		<script :src="getBundleFileUrl('js')"></script>
 	</head>
 	<body>
     <div class="site-background"></div>
     <script webc:type="js">
       this.content
+    </script>
+    <script src="/scripts/fontfaceobserver.js" webc:keep></script>
+    <script :src="getBundleFileUrl('js')" webc:keep></script>
+    <script>
+      (() => {
+        new FontFaceObserver('Mona Sans').load().then(() => {
+          document.body.classList.add('fonts-loaded');
+        });
+      })();
     </script>
     <site-footer></site-footer>
   </body>

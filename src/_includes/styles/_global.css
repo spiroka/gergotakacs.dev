@@ -81,7 +81,20 @@ h3 {
 }
 
 body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.05px;
+  word-spacing: -0.8px;
+  background-color: var(--color-background);
+}
+
+body.fonts-loaded {
+  font-family: 'Mona Sans', sans-serif;
+  line-height: var(--line-height);
   font-size: var(--font-size-base);
+  letter-spacing: unset;
+  word-spacing: unset;
 }
 
 a {
