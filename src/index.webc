@@ -18,9 +18,15 @@
   </section>
   <div class="main-content wrapper">
     <section class="feed flow margin-bottom-m">
-      <h2>
-        the feed
-      </h2>
+      <div class="feed__title">
+        <h2>
+          the feed
+        </h2>
+        <label class="text-m font-bold">
+          <input type="checkbox" />
+          English only
+        </label>
+      </div>
       <feed-item
         webc:for="(item, index) of collections.feed"
         webc:if="index < 5"

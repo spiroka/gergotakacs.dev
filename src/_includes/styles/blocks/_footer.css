@@ -1,8 +1,6 @@
 .footer {
   background-color: var(--color-text);
-  border-radius: 2rem;
   margin-block-start: calc(3 * var(--space-l));
-  margin-block-end: var(--space-l);
   color: var(--color-secondary);
 
   & a {
