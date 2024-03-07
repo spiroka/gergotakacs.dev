@@ -22,10 +22,6 @@
         <h2>
           the feed
         </h2>
-        <label class="text-m font-bold">
-          <input type="checkbox" />
-          English only
-        </label>
       </div>
       <feed-item
         webc:for="(item, index) of collections.feed"
