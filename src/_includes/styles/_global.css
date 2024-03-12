@@ -122,3 +122,7 @@ ul, ol {
 sup, sub {
   font-size: var(--font-size-tiny);
 }
+
+input {
+  accent-color: var(--color-primary);
+}

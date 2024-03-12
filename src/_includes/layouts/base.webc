@@ -7,13 +7,14 @@
     <title @raw="title"></title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
+    <script src="/scripts/fontfaceobserver.js" webc:keep></script>
+    <script src="/scripts/htmx.js" webc:keep></script>
 	</head>
 	<body>
     <div class="site-background"></div>
     <script webc:type="js">
       this.content
     </script>
-    <script src="/scripts/fontfaceobserver.js" webc:keep></script>
     <script :src="getBundleFileUrl('js')" webc:keep></script>
     <script>
       (() => {

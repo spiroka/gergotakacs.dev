@@ -2,7 +2,7 @@
   <img class="margin-bottom-s" webc:if="image" :src="image" alt="">
   <p class="text-s">
     <script webc:type="js">
-      this.tags.map((tag) => `<span class="feed-item__tag feed-item__tag--${tag}">${tag}</span>`).join(' ');
+      this.tags.map((tag) => `<span class="feed-item__tag feed-item__tag--${tag}">${tag}</span>`).join(' • ');
     </script>
   </p>
   <h3 class="text-m">

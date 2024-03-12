@@ -1,0 +1,39 @@
+<script webc:setup>
+  const items = collections.feed
+    .filter(({ tags }) => !tags.includes('HUN'))
+    .slice(0, 5);
+</script>
+
+<section id="feed" class="feed flow margin-bottom-m">
+  <div class="feed__title">
+    <h2>
+      the feed
+    </h2>
+    <label class="text-s font-bold">
+      <input
+        type="checkbox"
+        checked
+        hx-get="/feed/all"
+        hx-trigger="change"
+        hx-target="#feed"
+        hx-swap="outerHTML"
+        hx-disabled-elt="this"
+      />
+      English only
+    </label>
+  </div>
+  <feed-item
+    webc:for="item of items"
+    :@date="item.timestamp"
+    :@title="item.title"
+    :@image="item.image"
+    :@is-external="item.isExternal"
+    :@link="item.url"
+    :@tags="item.tags"
+  ></feed-item>
+  <div class="text-center">
+    <a class="font-thin text-m" href="/archives">
+      › archives
+    </a>
+  </div>
+</section>

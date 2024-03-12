@@ -40,4 +40,16 @@
   & h1, & h2 {
     font-size: calc(var(--font-size-3) * 1.5);
   }
+
+  & .feed__title {
+    & h2 {
+      line-height: 1;
+    }
+
+    & input {
+      margin-top: -1px;
+      width: 1.2em;
+      height: 1.2em;
+    }
+  }
 }
