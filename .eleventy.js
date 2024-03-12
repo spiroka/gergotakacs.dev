@@ -6,12 +6,23 @@ const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const pluginTOC = require('eleventy-plugin-toc');
 const fetchVideos = require('./scripts/fetchVideos');
+const { readdir } = require('fs/promises');
+
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
   eleventyConfig.addPassthroughCopy({ 'src/_includes/javascript': '/' });
-  eleventyConfig.setTemplateFormats(['md', 'jpeg', 'jpg']);
+  eleventyConfig.addPassthroughCopy({ 'demos/build': '/demos' });
+  eleventyConfig.setTemplateFormats(['md', 'jpeg', 'jpg', 'html', 'png']);
+  eleventyConfig.addCollection('demos', async function () {
+    return (await readdir('demos/build', { withFileTypes: true }))
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => ({
+        title: dirent.name,
+        url: `/demos/${dirent.name}`
+      }));
+  });
   eleventyConfig.addCollection('feed', async function (collectionApi) {
     const posts = collectionApi.getFilteredByTag('blog');
     const videos = await fetchVideos();
@@ -32,7 +43,7 @@ module.exports = function (eleventyConfig) {
         dateStyle: 'medium'
       }).format(new Date(snippet.publishedAt)),
       isExternal: true,
-      tags: ['video'],
+      tags: ['video', 'HUN'],
     }));
 
     return [...postFeed, ...videoFeed].sort((a, b) => {
