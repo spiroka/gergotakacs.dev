@@ -5,6 +5,7 @@ const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const pluginTOC = require('eleventy-plugin-toc');
+const { eleventyImagePlugin } = require('@11ty/eleventy-img');
 const fetchVideos = require('./scripts/fetchVideos');
 
 require('dotenv').config();
@@ -51,7 +52,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(pluginWebc, {
-    components: 'src/_components/**/*.webc',
+    components: [
+      'src/_components/**/*.webc',
+      "npm:@11ty/eleventy-img/*.webc"
+    ],
     bundlePluginOptions: {
       transforms: [
         function (content) {
@@ -63,6 +67,10 @@ module.exports = function (eleventyConfig) {
         }
       ]
     }
+  });
+  eleventyConfig.addPlugin(eleventyImagePlugin, {
+    urlPath: '/img/',
+    formats: ['webp', 'jpeg', 'png']
   });
 
   return {

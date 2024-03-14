@@ -14,7 +14,7 @@
         I'm a web developer based in Spain.
       </p>
     </div>
-    <img class="intro__image" src="images/me.png" alt="">
+    <eleventy-image src="./src/me.png" alt=""></eleventy-image>
   </section>
   <div class="main-content wrapper">
     <section hx-get="/feed/english" hx-trigger="load" hx-swap="outerHTML" class="feed"></section>

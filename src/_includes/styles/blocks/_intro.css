@@ -21,15 +21,21 @@
     }
   }
 
-  & .intro__image {
+  & picture {
     grid-row: 1 / span 2;
     grid-column: 2;
     justify-self: end;
+    filter: drop-shadow(0 0 5px rgb(0 0 0 / 20%));
+    align-self: end;
 
     @media (--width-small) {
       & {
         display: none;
       }
+    }
+
+    & img {
+      display: block;
     }
   }
 
@@ -64,10 +70,5 @@
   & h1 {
     font-weight: 900;
     font-size: clamp(var(--font-size-3), 4vw, var(--font-size-enormous));
-  }
-
-  & img {
-    filter: drop-shadow(0 0 5px rgb(0 0 0 / 20%));
-    align-self: end;
   }
 }
