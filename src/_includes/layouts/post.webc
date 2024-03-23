@@ -5,7 +5,7 @@
 <header class="margin-x-l">
   <site-nav></site-nav>
 </header>
-<main class="post flow margin-y-l">
+<main class="post flow margin-y-l padding-x-s">
   <h1 class="text-primary" @text="title"></h1>
   <span class="text-muted text-s font-thin">
     <script webc:type="js">

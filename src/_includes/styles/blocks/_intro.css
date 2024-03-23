@@ -46,24 +46,19 @@
     border-radius: 2rem;
     background:
       radial-gradient(
-        circle at top left,
+        circle at bottom left,
         var(--color-gradient-1) 0%,
         var(--color-background-transparent) 30%
       ),
       radial-gradient(
-        circle at right,
+        circle at top right,
         var(--color-gradient-2) 0%,
         var(--color-background-transparent) 20%
       ),
       radial-gradient(
         circle at center,
         var(--color-gradient-3) 0%,
-        var(--color-background-transparent) 40%
-      ),
-      radial-gradient(
-        circle at top right,
-        var(--color-gradient-4) 0%,
-        var(--color-background-transparent) 20%
+        var(--color-background-transparent) 60%
       );
   }
 
