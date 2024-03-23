@@ -1,16 +1,7 @@
 .button {
   padding: .3em;
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
   border-radius: .5em;
-  font-weight: var(--font-weight-thin);
-  transition: all 0.2s;
-  line-height: 1;
-
-  &:hover {
-    box-shadow: none;
-    transform: translateY(2px);
-  }
+  border: 2px solid currentColor;
 
   &:is(a) {
     text-decoration: none;

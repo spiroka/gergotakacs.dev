@@ -1,6 +1,6 @@
-<nav class="nav margin-y-m">
+<nav class="nav wrapper padding-s">
   <ul class="text-m font-bold">
-    <li class="margin-right-m">
+    <li>
       <a href="/">home</a>
     </li>
     <li>

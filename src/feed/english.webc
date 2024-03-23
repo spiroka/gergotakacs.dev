@@ -32,8 +32,8 @@
     :@tags="item.tags"
   ></feed-item>
   <div class="text-center">
-    <a class="font-thin text-m" href="/archives">
-      › archives
+    <a class="text-m button" href="/archives">
+      archives
     </a>
   </div>
 </section>
