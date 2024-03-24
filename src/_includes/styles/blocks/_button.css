@@ -1,8 +1,9 @@
 .button {
-  color: var(--color-text);
-  padding: .3em;
+  color: var(--color-background);
+  background: var(--color-text);
+  padding: .3em 1em;
   border-radius: .5em;
-  border: 2px solid currentColor;
+  box-shadow: 0 0 .5em rgb(0 0 0 / .2);
 
   &:is(a) {
     text-decoration: none;
