@@ -1,0 +1,24 @@
+---
+  title: Demos
+  layout: layouts/base.webc
+---
+
+<header>
+  <site-nav></site-nav>
+</header>
+<main class="demos margin-x-s">
+  <section class="demos__welcome wrapper flow margin-y-l">
+    <h1>Welcome to my shed!</h1>
+    <p class="text-l">This page is a collection of experiments and demos that are not fleshed out enough to be called projects.</p>
+  </section>
+  <section class="wrapper demos__list">
+    <article class="flow" webc:for="item of collections.demos">
+      <h3><a @text="item.title" :href="item.url"></a></h3>
+      <p @text="item.description"></p>
+      <p class="text-s">
+        <a :href="'https://github.com/spiroka/demos/tree/master/packages/' + item.name">Source code</a>
+      </p>
+      <p @text="item.tags.join(', ')" class="font-thin text-s text-muted"></p>
+    </article>
+  </section>
+</main>

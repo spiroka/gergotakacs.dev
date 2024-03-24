@@ -1,0 +1,3 @@
+[submodule "src/demos"]
+	path = src/demos
+	url = https://github.com/spiroka/demos.git

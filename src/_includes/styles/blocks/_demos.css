@@ -1,0 +1,19 @@
+.demos {
+  & .demos__welcome {
+    & h1 {
+      font-size: var(--font-size-enormous);
+    }
+  }
+
+  & .demos__list {
+    --flow-space: var(--space-s);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+
+    & article {
+      padding: var(--space-m);
+      flex: 35ch;
+    }
+  }
+}

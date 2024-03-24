@@ -13,5 +13,5 @@ contents = contents
   .replace('${title}', title)
   .replace('${slug}', slug);
 
-await fs.mkdir(path.resolve(__dirname, `../src/posts/${slug}`));
-await fs.writeFile(path.resolve(__dirname, `../src/posts/${slug}/index.md`), contents);
+await fs.mkdir(path.resolve(__dirname, `../src/blog/${slug}`));
+await fs.writeFile(path.resolve(__dirname, `../src/blog/${slug}/index.md`), contents);
