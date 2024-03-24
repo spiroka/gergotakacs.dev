@@ -18,7 +18,7 @@
   </section>
   <div class="main-content wrapper">
     <section hx-get="/feed/english" hx-trigger="load" hx-swap="outerHTML" class="feed"></section>
-    <section class="about flow margin-bottom-l">
+    <section class="about flow">
       <h3>about me</h3>
       <p>
         I'm a <strong>senior software engineer</strong> at <a href="https://epam.com">EPAM Systems</a>.

@@ -4,7 +4,7 @@
     .slice(0, 5);
 </script>
 
-<section id="feed" class="feed flow margin-bottom-m">
+<section id="feed" class="feed flow margin-bottom-l">
   <div class="feed__title">
     <h2>
       the feed

@@ -1,5 +1,6 @@
 .feed-item {
   width: 100%;
+  max-width: 50ch;
 
   & .date {
     display: block;
@@ -32,10 +33,6 @@
 
 .feed {
   --flow-space: 0.5em;
-
-  &.feed-archive {
-    max-width: 60ch;
-  }
 
   & h1, & h2 {
     font-size: calc(var(--font-size-3) * 1.5);

@@ -1,10 +1,12 @@
-<nav class="nav wrapper padding-s">
-  <ul class="text-m font-bold">
-    <li>
-      <a href="/">home</a>
-    </li>
-    <li>
-      <a href="/archives">archives</a>
-    </li>
-  </ul>
+<nav class="nav padding-s">
+  <div class="wrapper">
+    <ul class="text-m font-bold">
+      <li>
+        <a href="/">home</a>
+      </li>
+      <li>
+        <a href="/archives">archives</a>
+      </li>
+    </ul>
+  </div>
 </nav>

@@ -2,7 +2,7 @@
   layout: layouts/base.webc
 ---
 
-<header class="margin-x-l">
+<header>
   <site-nav></site-nav>
 </header>
 <main class="post flow margin-y-l padding-x-s">

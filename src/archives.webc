@@ -6,20 +6,22 @@
 <header>
   <site-nav></site-nav>
 </header>
-<main class="feed feed-archive flow wrapper">
-  <h1 class="margin-s">
-    archives
-  </h1>
-  <section class="margin-x-s">
-    <feed-item
-      webc:for="(item, index) of collections.feed"
-      webc:if="index < 5"
-      :@date="item.timestamp"
-      :@title="item.title"
-      :@image="item.image"
-      :@is-external="item.isExternal"
-      :@link="item.url"
-      :@tags="item.tags"
-    ></feed-item>
-  </section>
+<main class="feed flow margin-s">
+  <div class="wrapper">
+    <h1>
+      archives
+    </h1>
+    <section>
+      <feed-item
+        webc:for="(item, index) of collections.feed"
+        webc:if="index < 5"
+        :@date="item.timestamp"
+        :@title="item.title"
+        :@image="item.image"
+        :@is-external="item.isExternal"
+        :@link="item.url"
+        :@tags="item.tags"
+      ></feed-item>
+    </section>
+  </div>
 </main>
