@@ -4,6 +4,10 @@
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" :content="eleventy.generator">
+    <meta name="og:title" :content="title">
+    <meta name="og:description" content="The personal website of Gergő Takács.">
+    <meta name="og:site_name" content="gergotakacs.dev">
+    <meta webc:if="type" name="og:type" :content="type">
     <title @raw="title"></title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep></link>
