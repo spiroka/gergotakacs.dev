@@ -13,6 +13,8 @@ This is a static site, built with [11ty](https://11ty.dev) and hosted on a CDN. 
 
 Since all these projects are and will be web-related, this rule was easy to follow.
 
+The repository is added as a git submodule to my main site repo and built separately before the 11ty build.
+
 ## Second rule: each demo should be able to describe itself
 
 I needed some metadata about each demo to be able to display them in a collection. For this I chose the [Open Graph protocol](https://ogp.me/). **Open Graph tags** are easy to parse and 11ty agnostic so they fit the bill perfectly. For scraping the metadata from the html content of each demo, I chose the [open-graph-scraper-lite](https://github.com/jshemas/openGraphScraperLite) npm package.
