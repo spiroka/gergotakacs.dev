@@ -1,19 +1,21 @@
-const processCss = require('./scripts/processCss');
-const pluginWebc = require('@11ty/eleventy-plugin-webc');
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const markdownIt = require('markdown-it');
-const markdownItAnchor = require('markdown-it-anchor');
-const markdownItFootnote = require('markdown-it-footnote');
-const pluginTOC = require('eleventy-plugin-toc');
-const { eleventyImagePlugin } = require('@11ty/eleventy-img');
-const fetchVideos = require('./scripts/fetchVideos');
-const { readdir, readFile } = require('fs/promises');
-const { join } = require('path');
-const ogs = require('open-graph-scraper-lite');
+import pluginWebc from '@11ty/eleventy-plugin-webc';
+import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import markdownIt from 'markdown-it';
+import pluginTOC from 'eleventy-plugin-toc';
+import markdownItAnchor from 'markdown-it-anchor';
+import markdownItFootnote from 'markdown-it-footnote';
+import ogs from 'open-graph-scraper-lite';
+import dotenv from 'dotenv';
+import { readdir, readFile } from 'fs/promises';
+import { join } from 'path';
 
-require('dotenv').config();
+import processCss from './scripts/processCss.js';
+import fetchVideos from './scripts/fetchVideos.js';
 
-module.exports = function (eleventyConfig) {
+dotenv.config();
+
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
   eleventyConfig.addPassthroughCopy({ 'src/_includes/javascript': '/' });
   eleventyConfig.addPassthroughCopy({ 'demos/build': '/demos' });
@@ -90,7 +92,8 @@ module.exports = function (eleventyConfig) {
       ]
     }
   });
-  eleventyConfig.addPlugin(eleventyImagePlugin, {
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     urlPath: '/img/',
     formats: ['webp', 'jpeg', 'png']
   });

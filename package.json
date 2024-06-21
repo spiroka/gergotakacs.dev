@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start:dev": "npx @11ty/eleventy --serve",
     "build": "cd demos && npm ci && npm run build && cd .. && npx @11ty/eleventy",
@@ -11,25 +12,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0-alpha.13",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@sindresorhus/slugify": "^2.2.1",
-    "browserslist": "^4.21.9",
-    "dotenv": "^16.3.1",
-    "lightningcss": "^1.21.5",
+    "browserslist": "^4.23.1",
+    "dotenv": "^16.4.5",
+    "lightningcss": "^1.25.1",
     "open-graph-scraper-lite": "^2.0.0",
-    "postcss": "^8.4.24",
-    "stylelint": "^15.9.0",
-    "stylelint-config-standard": "^33.0.0",
+    "postcss": "^8.4.38",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.1",
     "zx": "^7.2.3"
   },
   "dependencies": {
-    "@11ty/eleventy-fetch": "^4.0.0",
-    "@11ty/eleventy-img": "^3.1.8",
-    "@11ty/eleventy-plugin-webc": "^0.11.1",
+    "@11ty/eleventy-fetch": "^4.0.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
     "eleventy-plugin-toc": "^1.1.5",
-    "markdown-it": "^14.0.0",
-    "markdown-it-anchor": "^8.6.7",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.0.1",
     "markdown-it-footnote": "^4.0.0"
   }
 }
