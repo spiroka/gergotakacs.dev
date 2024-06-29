@@ -4,7 +4,7 @@
    */
   --line-height: 1.5;
   --modular-scale: 1.2;
-  --font-size-base: clamp(1rem, 2.5vw, 1.2rem);
+  --font-size-base: clamp(1rem, 0.7rem + 1vi, 1.2rem);
   --font-size-tiny: calc(var(--font-size-base) * 0.7);
   --font-size-small: calc(var(--font-size-base) * 0.8);
   --font-size-1: calc(var(--font-size-base) * var(--modular-scale));
