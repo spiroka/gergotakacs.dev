@@ -23,6 +23,6 @@
     <img src="/public/images/me.png" alt=""></img>
   </section>
   <div class="main-content wrapper">
-    <section hx-get="/feed/english" hx-trigger="load" hx-swap="outerHTML" class="feed"></section>
+    <feed-english></feed-english>
   </div>
 </main>

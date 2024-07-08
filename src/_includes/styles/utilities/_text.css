@@ -41,3 +41,8 @@
 .font-bold {
   font-weight: var(--font-weight-bold);
 }
+
+.text-inverse {
+  color: var(--color-background);
+  background-color: var(--color-text);
+}

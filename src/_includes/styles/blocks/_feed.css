@@ -40,14 +40,21 @@
   }
 
   & .feed__title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    border-bottom: 4px solid currentColor;
+
     & h2 {
       line-height: 1;
+      display: inline-block;
     }
 
     & input {
       margin-top: -1px;
       width: 1.2em;
       height: 1.2em;
+      accent-color: var(--color-text);
     }
   }
 }
