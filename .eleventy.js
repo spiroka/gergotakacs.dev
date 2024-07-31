@@ -42,14 +42,16 @@ export default function (eleventyConfig) {
     const posts = collectionApi.getFilteredByTag('blog');
     const videos = await fetchVideos();
 
-    const postFeed = posts.map(({ data: { title, timestamp }, url }) => ({
+    const postFeed = posts.map(({ data: { title, timestamp, draft }, url }) => ({
       title,
       timestamp: new Intl.DateTimeFormat('en-US', {
         dateStyle: 'medium'
       }).format(new Date(timestamp)),
       url,
-      tags: ['blog']
-    }));
+      tags: ['blog'],
+      draft
+    })).filter(({ draft }) => !draft);
+
     const videoFeed = videos.map(({ id, snippet }) => ({
       title: snippet.title,
       url: `https://youtube.com/watch?v=${id.videoId}`,

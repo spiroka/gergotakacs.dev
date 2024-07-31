@@ -14,7 +14,6 @@
     <section>
       <feed-item
         webc:for="(item, index) of collections.feed"
-        webc:if="index < 5"
         :@date="item.timestamp"
         :@title="item.title"
         :@image="item.image"
