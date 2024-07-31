@@ -7,7 +7,7 @@
   "scripts": {
     "start:dev": "npx @11ty/eleventy --serve",
     "build": "cd demos && npm ci && npm run build && cd .. && npx @11ty/eleventy",
-    "new:post": "zx ./scripts/newPost.mjs"
+    "new:post": "plop post"
   },
   "author": "",
   "license": "ISC",
@@ -19,10 +19,10 @@
     "dotenv": "^16.4.5",
     "lightningcss": "^1.25.1",
     "open-graph-scraper-lite": "^2.0.0",
+    "plop": "^4.0.1",
     "postcss": "^8.4.38",
     "stylelint": "^16.6.1",
-    "stylelint-config-standard": "^36.0.1",
-    "zx": "^7.2.3"
+    "stylelint-config-standard": "^36.0.1"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.1",
