@@ -1,5 +1,6 @@
 <nav class="nav wrapper margin-bottom-l margin-top-m">
   <a class="nav__logo font-bold padding-x-s" href="/">~/ gergő.takács</a>
+  <a class="nav__logo--short font-bold padding-x-s" href="/">~/ g.t</a>
   <ul class="font-bold">
     <li>
       <a class="padding-x-s" href="/archives">archives</a>

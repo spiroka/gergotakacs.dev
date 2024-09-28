@@ -12,6 +12,20 @@
     text-decoration-line: none;
     letter-spacing: 0.05em;
 
+    &.nav__logo--short {
+      display: none;
+    }
+
+    @media(--width-small) {
+      &.nav__logo {
+        display: none;
+      }
+      
+      &.nav__logo--short {
+        display: inline-block;
+      }
+    }
+
     &:hover {
       text-decoration-line: underline;
       text-decoration-color: currentColor;
@@ -19,6 +33,7 @@
       color: var(--color-background);
     }
   }
+  
 
   & ul {
     list-style: none;
