@@ -1,16 +1,28 @@
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   position: relative;
   z-index: 100;
+
+  & a {
+    display: inline-block;
+    color: var(--color-text);
+    padding-block: var(--space-xs);
+    text-decoration-line: none;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      text-decoration-line: underline;
+      text-decoration-color: currentColor;
+      background-color: var(--color-text);
+      color: var(--color-background);
+    }
+  }
 
   & ul {
     list-style: none;
     display: flex;
     gap: var(--space-m);
-
-    & li {
-      & a {
-        text-decoration: none;
-      }
-    }
   }
 }

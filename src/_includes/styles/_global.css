@@ -32,6 +32,7 @@
   /*
    * Spacing
    */
+  --space-xs: 0.5rem;
   --space-s: 1rem;
   --space-m: calc(var(--line-height) * 1rem);
   --space-l: calc(var(--line-height) * 2rem);

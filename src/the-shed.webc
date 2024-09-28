@@ -13,12 +13,12 @@
   </section>
   <section class="wrapper demos__list">
     <article class="flow" webc:for="item of collections.demos">
-      <h3><a @text="item.title" :href="item.url"></a></h3>
+      <h3 class="text-xl"><a @text="item.title" :href="item.url"></a></h3>
       <p @text="item.description"></p>
-      <p class="text-s">
+      <p class="text-m">
         <a :href="'https://github.com/spiroka/demos/tree/master/packages/' + item.name">Source code</a>
       </p>
-      <p @text="item.tags.join(', ')" class="font-thin text-s text-muted"></p>
+      <p @text="item.tags.join(', ')" class="font-thin text-m text-muted"></p>
     </article>
   </section>
 </main>

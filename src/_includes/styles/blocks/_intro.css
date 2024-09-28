@@ -28,10 +28,7 @@
     align-self: end;
 
     @media (--width-small) {
-      & {
-        grid-row: 2;
-        grid-column: 1 / span 2;
-      }
+      display: none;
     }
 
     & img {

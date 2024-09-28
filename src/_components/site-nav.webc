@@ -1,15 +1,11 @@
-<nav class="nav padding-s">
-  <div class="wrapper">
-    <ul class="text-m font-bold">
-      <li>
-        <a href="/">home</a>
-      </li>
-      <li>
-        <a href="/archives">archives</a>
-      </li>
-      <li>
-        <a href="/the-shed">the shed</a>
-      </li>
-    </ul>
-  </div>
+<nav class="nav wrapper margin-bottom-l margin-top-m">
+  <a class="nav__logo font-bold padding-x-s" href="/">~/ gergő.takács</a>
+  <ul class="font-bold">
+    <li>
+      <a class="padding-x-s" href="/archives">archives</a>
+    </li>
+    <li>
+      <a class="padding-x-s" href="/the-shed">the shed</a>
+    </li>
+  </ul>
 </nav>
