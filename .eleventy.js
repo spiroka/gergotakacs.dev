@@ -5,6 +5,7 @@ import markdownIt from 'markdown-it';
 import pluginTOC from 'eleventy-plugin-toc';
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItFootnote from 'markdown-it-footnote';
+import markdownItAbbrev from 'markdown-it-abbr';
 import ogs from 'open-graph-scraper-lite';
 import dotenv from 'dotenv';
 import { readdir, readFile } from 'fs/promises';
@@ -50,7 +51,7 @@ export default function (eleventyConfig) {
       url,
       tags: ['blog'],
       draft
-    })).filter(({ draft }) => !draft);
+    })).filter(({ draft }) => !draft || process.env.ELEVENTY_RUN_MODE === 'serve');
 
     const videoFeed = videos.map(({ id, snippet }) => ({
       title: snippet.title,
@@ -72,6 +73,7 @@ export default function (eleventyConfig) {
     markdownIt()
       .use(markdownItAnchor)
       .use(markdownItFootnote)
+      .use(markdownItAbbrev)
   );
 
   // Plugins

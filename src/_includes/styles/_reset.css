@@ -33,8 +33,8 @@ sup, sub {
   top: -0.4em;
 }
 
-sub { 
-  top: 0.4em; 
+sub {
+  top: 0.4em;
 }
 
 :is(ol, ul) :is(ol, ul) {
@@ -96,7 +96,8 @@ del {
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
+    border-bottom: 1px dotted;
+    text-decoration: none;
     cursor:help;
 }
 
