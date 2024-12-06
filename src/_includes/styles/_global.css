@@ -127,3 +127,8 @@ sup, sub {
 input {
   accent-color: var(--color-primary);
 }
+
+figcaption {
+  text-align: center;
+  font-size: var(--font-size-small);
+}

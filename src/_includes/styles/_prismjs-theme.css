@@ -150,11 +150,11 @@ pre[class*='language-'] {
 }
 
 .token.inserted {
-	background: #00ff00;
+	background: #00ff0055;
 }
 
 .token.deleted {
-	background: #ff000d;
+	background: #ff000d55;
 }
 
 code.language-css .token.property,

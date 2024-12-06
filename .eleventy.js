@@ -6,6 +6,7 @@ import pluginTOC from 'eleventy-plugin-toc';
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownItAbbrev from 'markdown-it-abbr';
+import markdownItFigures from 'markdown-it-image-figures';
 import ogs from 'open-graph-scraper-lite';
 import dotenv from 'dotenv';
 import { readdir, readFile } from 'fs/promises';
@@ -74,6 +75,7 @@ export default function (eleventyConfig) {
       .use(markdownItAnchor)
       .use(markdownItFootnote)
       .use(markdownItAbbrev)
+      .use(markdownItFigures, { figcaption: true })
   );
 
   // Plugins
