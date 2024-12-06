@@ -1,11 +1,11 @@
 ---
 tags:
   - blog
-timestamp: 2024-09-18T18:40:13.777Z
+timestamp: 2024-12-06
 title: How I halved the bundle size of our React applications
 layout: layouts/post.webc
 permalink: /blog/how-i-halved-the-bundle-size-of-our-react-applications/
-draft: true
+draft: false
 ---
 Single page application frameworks get a lot of (well deserved) flak for producing enormous JavaScript bundles. Although some of this bloat cannot be avoided, it is worth taking a closer look at your setup, because a misconfigured toolchain can add KBs or even MBs to your app's final size.
 
