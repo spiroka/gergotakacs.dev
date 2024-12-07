@@ -2,7 +2,7 @@
 tags:
   - blog
 timestamp: 2024-12-06
-title: How I halved the bundle size of our React applications
+title: How I shaved off megabytes from our React applications' bundle size
 layout: layouts/post.webc
 permalink: /blog/how-i-halved-the-bundle-size-of-our-react-applications/
 draft: false
