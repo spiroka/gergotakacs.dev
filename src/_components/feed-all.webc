@@ -9,7 +9,7 @@
         hx-get="/feed/english"
         hx-trigger="change"
         hx-target="#feed"
-        hx-swap="outerHTML"
+        hx-swap="outerHTML transition:true"
         hx-disabled-elt="this"
       />
       English only

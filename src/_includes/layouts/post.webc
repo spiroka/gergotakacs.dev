@@ -7,7 +7,12 @@
   <site-nav></site-nav>
 </header>
 <main class="post flow margin-y-l padding-x-s">
-  <h1 class="text-primary" @text="title"></h1>
+  <h1
+    id="title"
+    class="text-primary"
+    @text="title"
+    :style="`--transition-name: ${permalink.replace(/\//g, '')}`"
+  ></h1>
   <span class="text-muted text-s font-thin">
     <script webc:type="js">
       new Intl.DateTimeFormat('en-US', {

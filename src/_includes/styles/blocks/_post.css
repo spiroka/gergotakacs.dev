@@ -6,6 +6,7 @@
   & h1 {
     font-size: var(--font-size-enormous);
     line-height: 1.2;
+    view-transition-name: var(--transition-name);
   }
 
   & img {

@@ -6,7 +6,13 @@
     </script>
   </p>
   <h3 class="text-l">
-    <a :href='link' @text="title" :data-variant="isExternal ? 'external' : ''"></a>
+    <a
+      :href="link"
+      @text="title"
+      :data-variant="isExternal ? 'external' : ''"
+      :style="`--transition-name: ${link.replace(/\//g, '')}`"
+    >
+    </a>
   </h3>
   <span class="feed-item__date text-m text-muted font-thin" @text="date"></span>
 </article>

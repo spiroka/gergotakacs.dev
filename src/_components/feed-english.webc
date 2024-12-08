@@ -15,7 +15,7 @@
         hx-get="/feed/all"
         hx-trigger="change"
         hx-target="#feed"
-        hx-swap="outerHTML"
+        hx-swap="outerHTML transition:true"
         hx-disabled-elt="this"
       />
       English only

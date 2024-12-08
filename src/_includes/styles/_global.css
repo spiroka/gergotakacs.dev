@@ -62,6 +62,10 @@
   font-stretch: 100%;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 html {
   position: relative;
   font-size: 100%;
@@ -84,7 +88,8 @@ h3 {
 body {
   height: 100%;
   font-family: Arial, sans-serif;
-  font-size: 17px;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
   letter-spacing: 0.05px;
   word-spacing: -0.8px;
   background-color: var(--color-background);
