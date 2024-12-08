@@ -12,32 +12,60 @@
     text-decoration-line: none;
     letter-spacing: 0.05em;
 
-    &.nav__logo--short {
-      display: none;
+    &.nav__logo {
+      background-image: url(/images/duck.png);
+      background-size: cover;
+      width: 45px;
+      height: 40px;
+      animation: duck-rotate 1s steps(1, end) infinite;
+      margin-inline: var(--space-xs);
     }
 
-    @media(--width-small) {
-      &.nav__logo {
-        display: none;
-      }
-      
-      &.nav__logo--short {
-        display: inline-block;
-      }
-    }
-
-    &:hover {
+    &:not(.nav__logo):hover {
       text-decoration-line: underline;
       text-decoration-color: currentColor;
       background-color: var(--color-text);
       color: var(--color-background);
     }
   }
-  
 
   & ul {
     list-style: none;
     display: flex;
     gap: var(--space-m);
+  }
+}
+
+@keyframes duck-rotate {
+  0% {
+    background-position-x: 0;
+  }
+
+  12.5% {
+    background-position-x: 14%;
+  }
+
+  25% {
+    background-position-x: 28%;
+  }
+
+  37.5% {
+    background-position-x: 42%;
+  }
+
+  50% {
+    background-position-x: 58%;
+  }
+
+  62.5% {
+    background-position-x: 72%;
+  }
+
+  75% {
+    background-position-x: 86%;
+  }
+
+  87.5% {
+    background-position-x: 100%;
   }
 }
