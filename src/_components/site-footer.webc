@@ -22,7 +22,7 @@
       </ul>
     </div>
     <div class="text-center text-s font-thin">
-      © 2023 Gergő Takács • <a href="https://github.com/spiroka/gergotakacs.dev">View source</a> • Built with <a href="https://11ty.dev">11ty</a>
+      © <script webc:type="js">new Date().getFullYear()</script> Gergő Takács • <a href="https://github.com/spiroka/gergotakacs.dev">View source</a> • Built with <a href="https://11ty.dev">11ty</a>
     </div>
   </div>
 </footer>
