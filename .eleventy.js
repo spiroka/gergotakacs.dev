@@ -1,5 +1,6 @@
 import pluginWebc from '@11ty/eleventy-plugin-webc';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import { feedPlugin } from '@11ty/eleventy-plugin-rss';
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import markdownIt from 'markdown-it';
 import pluginTOC from 'eleventy-plugin-toc';
@@ -21,7 +22,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
   eleventyConfig.addPassthroughCopy({ 'src/_includes/javascript': '/' });
   eleventyConfig.addPassthroughCopy({ 'demos/build': '/demos' });
-  eleventyConfig.setTemplateFormats(['md', 'jpeg', 'jpg', 'html', 'png']);
+  eleventyConfig.setTemplateFormats(['md', 'jpeg', 'jpg', 'html', 'png', 'njk']);
   eleventyConfig.addCollection('demos', async function () {
     const demoDirs = (await readdir('demos/build', { withFileTypes: true }))
       .filter(dirent => dirent.isDirectory())
@@ -69,6 +70,21 @@ export default function (eleventyConfig) {
       return new Date(b.timestamp) - new Date(a.timestamp);
     });
   });
+
+  eleventyConfig.addCollection('rss', function (collectionApi) {
+    const posts = collectionApi.getFilteredByTag('blog');
+
+    const postFeed = posts
+      .filter(({ data: { draft } }) => !draft)
+      .map((post) => {
+        post.date = new Date(post.data.timestamp);
+
+        return post;
+      });
+
+    return postFeed;
+  });
+
   eleventyConfig.setLibrary(
     'md',
     markdownIt()
@@ -102,6 +118,23 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     urlPath: '/img/',
     formats: ['webp', 'jpeg', 'png']
+  });
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: 'rss',
+    output: 'feed.xml',
+    collection: {
+      name: 'rss',
+      limit: 0
+    },
+    metadata: {
+      language: 'en',
+      title: 'Gergő Takács',
+      base: 'https://gergotakacs.dev',
+      author: {
+        name: 'Gergő Takács'
+      }
+    }
   });
 
   return {
