@@ -19,6 +19,9 @@
         <li>
           <a href="/the-shed">The Shed</a>
         </li>
+        <li>
+          <a href="/feed.xml">RSS</a>
+        </li>
       </ul>
     </div>
     <div class="text-center text-s font-thin">
