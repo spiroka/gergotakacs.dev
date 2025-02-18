@@ -7,20 +7,22 @@
   <site-nav></site-nav>
 </header>
 <main class="post flow margin-y-l padding-x-s">
-  <h1
-    id="title"
-    class="text-primary"
-    @text="title"
-    :style="`--transition-name: ${permalink.replace(/\//g, '')}`"
-  ></h1>
-  <span class="text-muted text-s font-thin">
-    <script webc:type="js">
-      new Intl.DateTimeFormat('en-US', {
-        dateStyle: 'medium'
-      }).format(new Date(this.timestamp))
-    </script>
-  </span>
-  <details class="margin-bottom-l">
+  <div class="post__title">
+    <h1
+      id="title"
+      class="text-primary"
+      @text="title"
+      :style="`--transition-name: ${permalink.replace(/\//g, '')}`"
+    ></h1>
+    <span class="text-muted text-s font-thin">
+      <script webc:type="js">
+        new Intl.DateTimeFormat('en-US', {
+          dateStyle: 'medium'
+        }).format(new Date(this.timestamp))
+      </script>
+    </span>
+  </div>
+  <details class="post__toc margin-bottom-l">
     <summary>Table of Contents</summary>
     <div @raw="toc(content)"></div>
   </details>

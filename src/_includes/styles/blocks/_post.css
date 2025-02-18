@@ -1,7 +1,40 @@
 .post {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas:
+    ". title title"
+    "toc post post";
   margin-inline: auto;
-  max-width: 80ch;
+  max-width: 100ch;
   line-height: 1.8;
+  gap: var(--space-s);
+
+  @media (--width-small) {
+    & {
+      display: block;
+    }
+  }
+
+  & .post__title {
+    grid-area: title;
+  }
+
+  & article {
+    grid-area: post;
+  }
+
+  & .post__toc {
+    grid-area: toc;
+    position: sticky;
+    top: var(--space-s);
+    align-self: start;
+
+    @media (--width-small) {
+      & {
+        position: static;
+      }
+    }
+  }
 
   & h1 {
     font-size: var(--font-size-enormous);
