@@ -1,4 +1,8 @@
 pre[class*="language-"] {
   border-radius: 1.5em;
   margin-block: var(--space-l);
+
+  & code {
+    font-size: var(--font-size-small);
+  }
 }
