@@ -5,7 +5,7 @@
 <header>
   <site-nav></site-nav>
 </header>
-<main class="margin-x-s">
+<main class="margin-x-s flex-1">
   <section class="intro wrapper text-l margin-bottom-l padding-top-s">
     <div class="intro__background"></div>
     <div class="intro__text flow">
@@ -14,7 +14,7 @@
         I'm a web developer based in Spain.
       </p>
       <p>
-        When I'm not in front of a monitor, you can probably catch me riding my bike or exploring new places with my beautiful girlfriend and our dog Tisza.
+        When I'm not in front of a monitor, you can probably catch me riding my bike or exploring new places with my beautiful fiancé and our dog Tisza.
       </p>
     </div>
     <img src="/public/images/me.png" alt=""></img>

@@ -6,7 +6,7 @@
 <header>
   <site-nav></site-nav>
 </header>
-<main class="post flow margin-y-l padding-x-s">
+<main class="post flow margin-y-l padding-x-s flex-1 full-width">
   <div class="post__title">
     <h1
       id="title"

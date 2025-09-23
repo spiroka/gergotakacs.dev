@@ -6,7 +6,7 @@
 <header>
   <site-nav></site-nav>
 </header>
-<main class="demos margin-x-s">
+<main class="demos margin-x-s flex-1">
   <section class="demos__welcome wrapper flow margin-y-l">
     <h1>Welcome to my shed!</h1>
     <p class="text-l">This page is a collection of experiments and demos that are not fleshed out enough to be called projects.</p>

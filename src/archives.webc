@@ -6,7 +6,7 @@
 <header>
   <site-nav></site-nav>
 </header>
-<main class="feed flow margin-s">
+<main class="feed flow margin-s flex-1">
   <div class="wrapper">
     <h1>
       archives
