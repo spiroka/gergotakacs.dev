@@ -1,5 +1,5 @@
 <nav class="nav wrapper margin-bottom-l margin-top-m">
-  <a class="nav__logo" href="/"></a>
+  <a class="nav__logo" aria-label="To home page" href="/"></a>
   <ul class="font-bold">
     <li>
       <a class="padding-x-s" href="/archives">archives</a>

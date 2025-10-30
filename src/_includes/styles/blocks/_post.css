@@ -29,6 +29,10 @@
     top: var(--space-s);
     align-self: start;
 
+    & summary:focus-visible {
+      outline: 2px auto;
+    }
+
     @media (--width-small) {
       & {
         position: static;
