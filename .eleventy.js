@@ -57,7 +57,7 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addCollection("feed", async function (collectionApi) {
     const posts = collectionApi.getFilteredByTag("blog");
-    const videos = await fetchVideos();
+    //const videos = await fetchVideos();
 
     const postFeed = posts
       .map(({ data: { title, timestamp, draft }, url }) => ({
@@ -73,18 +73,18 @@ export default function (eleventyConfig) {
         ({ draft }) => !draft || process.env.ELEVENTY_RUN_MODE === "serve",
       );
 
-    const videoFeed = videos.map(({ id, snippet }) => ({
-      title: snippet.title,
-      url: `https://youtube.com/watch?v=${id.videoId}`,
-      image: snippet.thumbnails.medium.url,
-      timestamp: new Intl.DateTimeFormat("en-US", {
-        dateStyle: "medium",
-      }).format(new Date(snippet.publishedAt)),
-      isExternal: true,
-      tags: ["video", "HUN"],
-    }));
+    // const videoFeed = videos.map(({ id, snippet }) => ({
+    //   title: snippet.title,
+    //   url: `https://youtube.com/watch?v=${id.videoId}`,
+    //   image: snippet.thumbnails.medium.url,
+    //   timestamp: new Intl.DateTimeFormat("en-US", {
+    //     dateStyle: "medium",
+    //   }).format(new Date(snippet.publishedAt)),
+    //   isExternal: true,
+    //   tags: ["video", "HUN"],
+    // }));
 
-    return [...postFeed, ...videoFeed].sort((a, b) => {
+    return [...postFeed /**...videoFeed**/].sort((a, b) => {
       return new Date(b.timestamp) - new Date(a.timestamp);
     });
   });
