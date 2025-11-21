@@ -1,0 +1,20 @@
+---
+  title: Gergő Takács - Projects
+  layout: layouts/base.webc
+---
+<header>
+  <site-nav></site-nav>
+</header>
+<main class="projects margin-s flex-1">
+  <div class="wrapper flow">
+    <h1>projects</h1>
+    <article class="project flex-row flex-wrap">
+      <img src="public/images/projects/csshaiku.jpg" alt="">
+      <div class="flex-1">
+        <time class="text-s">2025</time>
+        <h2><a href="https://css-haiku.gergotakacs.dev">CSS Haiku</a></h2>
+        <p>Constraints boost creativity. This is the main idea behind CSS Haiku. The main inspiration for creating this site was a Codepen article from 2015.</p>
+      </div>
+    </article>
+  </div>
+</main>

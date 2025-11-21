@@ -17,8 +17,11 @@
           <a href="/archives">Archives</a>
         </li>
         <li>
-          <a href="/the-shed">The Shed</a>
+          <a href="/projects">Projects</a>
         </li>
+        <!--<li>
+          <a href="/the-shed">The Shed</a>
+        </li>-->
         <li>
           <a href="/feed.xml">RSS</a>
         </li>

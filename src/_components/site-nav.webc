@@ -5,7 +5,10 @@
       <a class="padding-x-s" href="/archives">archives</a>
     </li>
     <li>
-      <a class="padding-x-s" href="/the-shed">the shed</a>
+      <a class="padding-x-s" href="/projects">projects</a>
     </li>
+    <!--<li>
+      <a class="padding-x-s" href="/the-shed">the shed</a>
+    </li>-->
   </ul>
 </nav>
